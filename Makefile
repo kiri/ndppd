@@ -4,8 +4,9 @@ else
 CXXFLAGS ?= -O3
 endif
 
-PREFIX  ?= /usr/local
-CXX     ?= g++
+PREFIX  = /ndppd/local
+CXX     = /usr/bin/mipsel-linux-gnu-g++
+LDFLAGS = -static
 GZIP    ?= /bin/gzip
 MANDIR  ?= ${DESTDIR}${PREFIX}/share/man
 SBINDIR ?= ${DESTDIR}${PREFIX}/sbin
